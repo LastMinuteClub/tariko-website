@@ -233,8 +233,8 @@ pre {
     justify-self: flex-end;
 }
 
-.features-main {
-    overflow: visible;
+.features-main .container {
+    overflow: hidden;
 }
 
 .features-main .card > i {
