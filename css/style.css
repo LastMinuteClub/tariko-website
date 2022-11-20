@@ -4,12 +4,14 @@
     --primary-colour: #047aed;
     --primary-colour-highlight: #388ee3;
     --secondary-colour: #1c3fa8;
-    --dark-colour: #002240;
+    --dark-colour: #0e0040;
     --dark-colour-highlight: #19476d;
     --light-colour: #f4f4f4;
     --light-colour-highlight: #c7c7c7;
     --success-colour: #5cb85c;
     --error-colour: #d9534f;
+    --gradient-colour: rgba(217, 0, 255, 0.25);
+    --gradient-colour-dark: rgba(130, 130, 130, 0.25);
 }
 
 * {
@@ -92,6 +94,7 @@ pre {
     background-color: var(--primary-colour);
     color: white;
     position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(217, 0, 255, 0.25));
 }
 
 .showcase h2 {
@@ -107,12 +110,12 @@ pre {
 
 .showcase p {
     margin: 20px 0;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 .showcase .grid {
     overflow: visible;
-    grid-template-columns: 55% 45%;
+    /* grid-template-columns: 55% 45%; */
     gap: 30px;
 }
 
@@ -148,6 +151,10 @@ pre {
     width: 100%;
     padding: 3px;
     font-size: 16px;
+}
+
+.showcase-form p.hidden {
+    margin: 0;
 }
 
 .showcase-form input:focus {
@@ -226,6 +233,11 @@ pre {
     transform: translateY(-15px);
 }
 
+.languages .card:active {
+    transform: translateY(-15px);
+}
+
+
 /* Features */
 .features-head img,
 .docs-head img {
@@ -289,6 +301,10 @@ pre {
 .docs-main a:hover {
     /* font-weight: bold; */
     color: var(--primary-colour);
+}
+
+.docs-main a.btn-primary:hover {
+    color: #fff;
 }
 
 /* Footer */
@@ -415,5 +431,9 @@ pre {
         margin: 0;
         justify-content: space-between;
         background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .showcase-form {
+        width: 300px;
     }
 }
