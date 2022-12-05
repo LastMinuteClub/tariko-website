@@ -3,15 +3,46 @@
 :root {
     --primary-colour: #047aed;
     --primary-colour-highlight: #388ee3;
+    --primary-colour-complimentary: #ED7704;
     --secondary-colour: #1c3fa8;
     --dark-colour: #0e0040;
     --dark-colour-highlight: #19476d;
     --light-colour: #f4f4f4;
-    --light-colour-highlight: #c7c7c7;
+    --light-colour-highlight: #e2e2e2;
     --success-colour: #5cb85c;
     --error-colour: #d9534f;
-    --gradient-colour: rgba(217, 0, 255, 0.25);
+    /* --gradient-colour: #d900ff40; */
+    --gradient-colour-secondary: #d900ff40;
+    --gradient-colour: #c241fa;
+    --gradient-colour-complimentary: rgba(38, 255, 0, 0.75);
+    --gradient-colour-light: #aaaaaa;
     --gradient-colour-dark: rgba(130, 130, 130, 0.25);
+
+    --palette-one-primary: #9b88b7;
+    --palette-one-secondary: #B79B88;
+    --palette-one-tertiary: #88B79B;
+    
+    --palette-one-primary-dark: #8068A4;
+    --palette-one-primary-complimentary: #A4B788;
+
+    --palette-one-seconday-dark: #A48068;
+    --palette-one-seconday-complimentary: #88A4B7;
+
+    --palette-one-tertiary-dark: #68A480;
+    --palette-one-tertiary-complimentary: #B788A4;
+
+    --palette-two-primary: #5E56CA;
+    --palette-two-secondary: #9856CA;
+    --palette-two-tertiary: #5688CA;
+    
+    --palette-two-primary-dark: #4139B4;
+    --palette-two-primary-complimentary: #C2CA56;
+
+    --palette-two-seconday-dark: #7F39B4;
+    --palette-two-seconday-complimentary: #88CA56;
+
+    --palette-two-tertiary-dark: #396EB4;
+    --palette-two-tertiary-complimentary: #CA9856;
 }
 
 * {
@@ -94,7 +125,8 @@ pre {
     background-color: var(--primary-colour);
     color: white;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(217, 0, 255, 0.25));
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(217, 0, 255, 0.25)); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), var(--gradient-colour));
 }
 
 .showcase h2 {

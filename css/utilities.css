@@ -59,11 +59,20 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0), black);
 }
 
-.bg-primary, 
-.btn-primary {
+.bg-primary
+/* .btn-primary  */
+{
     background-color: var(--primary-colour);
     color: #fff;
     background-image: linear-gradient(rgba(0, 0, 0, 0), var(--gradient-colour));
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0), var(--gradient-colour-secondary)); */
+}
+
+.btn-primary {
+    background-color: var(--primary-colour);
+    color: #fff;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0), var(--gradient-colour)); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), var(--gradient-colour-secondary));
 }
 
 .bg-secondary, 
@@ -99,6 +108,8 @@
 
 .btn-light:hover {
     background-color: var(--light-colour-highlight);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), var(--gradient-colour-light));
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0), var(--gradient-)); */
 }
 
 /* Text colours */
@@ -116,6 +127,22 @@
 
 .text-light {
     color: var(--light-colour);
+}
+
+.text-gradient {
+    font-weight: bold;
+    background: linear-gradient(to bottom right, var(--primary-colour-complimentary), var(--gradient-colour-complimentary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient {
+    font-weight: bold;
+    background: linear-gradient(to bottom right, #fff, var(--palette-two-primary-complimentary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Text sizes */
